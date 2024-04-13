@@ -15,9 +15,9 @@ const answer4Element = document.querySelector(".a4");
 
 function displayAnswer(iconName, answerName) {
   if (iconName.src.includes("icon-plus.svg")) {
-    iconName.src = "/assets/images/icon-minus.svg";
+    iconName.src = "./assets/images/icon-minus.svg";
   } else {
-    iconName.src = "/assets/images/icon-plus.svg";
+    iconName.src = "./assets/images/icon-plus.svg";
   }
 
   if (answerName.classList.contains("hidden")) {

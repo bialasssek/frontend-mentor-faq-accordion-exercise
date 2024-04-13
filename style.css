@@ -49,7 +49,7 @@ body {
 .container {
   box-shadow: hsla(292, 16%, 49%, 0.3) 0px 2px 8px 0px;
   background-color: var(--clr-neutral-100);
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   width: 600px;
   color: var(--clr-neutral-700);
   padding: 2rem;
@@ -77,6 +77,12 @@ body {
   display: grid;
   gap: 1.5rem;
 }
+.q1,
+.q2,
+.q3 {
+  border-bottom: 1px solid var(--clr-neutral-200);
+}
+
 .question:hover,
 .question:focus-visible {
   color: var(--clr-neutral-600);
@@ -95,6 +101,7 @@ body {
   color: var(--clr-neutral-400);
   opacity: 0.7;
   line-height: 1.3;
+  margin-bottom: 1rem;
 }
 
 .icon1,
@@ -102,4 +109,28 @@ body {
 .icon3,
 .icon4 {
   cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 330px;
+    padding: 1.25rem;
+    margin-inline: 2rem;
+  }
+  .header-title {
+    font-size: 2rem;
+  }
+  .header-star {
+    width: 1.25rem;
+  }
+  .question-title {
+    font-size: 0.925rem;
+    width: 200px;
+  }
+  .questions {
+    gap: 1rem;
+  }
+  .question-answer {
+    font-size: 0.875rem;
+  }
 }
